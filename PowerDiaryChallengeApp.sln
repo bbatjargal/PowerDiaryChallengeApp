@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerDiaryChallenge", "PowerDiaryChallenge\PowerDiaryChallenge.csproj", "{4C3ADF57-E44F-48B5-88EE-7852D5794E1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerDiaryChallenge.UnitTests", "PowerDiaryChallenge.UnitTests\PowerDiaryChallenge.UnitTests.csproj", "{F8D489EF-1CA7-44A9-8A8F-F4990B03F08F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C3ADF57-E44F-48B5-88EE-7852D5794E1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C3ADF57-E44F-48B5-88EE-7852D5794E1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C3ADF57-E44F-48B5-88EE-7852D5794E1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C3ADF57-E44F-48B5-88EE-7852D5794E1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8D489EF-1CA7-44A9-8A8F-F4990B03F08F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8D489EF-1CA7-44A9-8A8F-F4990B03F08F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8D489EF-1CA7-44A9-8A8F-F4990B03F08F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8D489EF-1CA7-44A9-8A8F-F4990B03F08F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9074B70C-B8BE-4033-9423-180AE53598C3}
+	EndGlobalSection
+EndGlobal
