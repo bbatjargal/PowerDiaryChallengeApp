@@ -1,7 +1,11 @@
 # PowerDiaryChallengeApp
 A console application to view chat history at varying levels of time-based aggregation.
 
-#Dependency
+# Design principles
+
+- SOLID
+
+# Dependency
 
 - `.NET6.0`
 - `Ensure.That - 10.1.0`
