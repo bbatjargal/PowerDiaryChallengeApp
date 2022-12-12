@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="PowerDiaryChallenge.ChatEventViewerApp">
+    <Position X="1.5" Y="1" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAIAAAIAAAAAAAUAAAAAAAAAI=</HashCode>
+      <FileName>ChatEventViewerApp.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PowerDiaryChallenge.Helpers.Constants">
+    <Position X="5.5" Y="2.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Helpers\Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PowerDiaryChallenge.Helpers.DataHandler">
+    <Position X="5.5" Y="1" Width="3" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\DataHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PowerDiaryChallenge.Logics.MessageHistoryManager">
+    <Position X="4" Y="4" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAQAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Logics\MessageHistoryManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PowerDiaryChallenge.Models.Message">
+    <Position X="1.5" Y="4" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAACAAAAAEAAAAAAAAAACACAAAAAA=</HashCode>
+      <FileName>Models\Message.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
