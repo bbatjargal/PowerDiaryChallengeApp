@@ -16,6 +16,6 @@ namespace PowerDiaryChallenge
         /// </summary>
         /// <param name="cancellationToken">Cancellation token.</param>
         /// <returns>Returns a <see cref="Task"/>.</returns>
-        Task Run(CancellationToken cancellationToken);
+        Task RunAsync(CancellationToken cancellationToken);
     }
 }

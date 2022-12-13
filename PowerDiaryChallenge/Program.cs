@@ -14,20 +14,21 @@ namespace PowerDiaryChallenge
     public class Program
     {
 
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             // Setup DI.
             var serviceCollection = new ServiceCollection()
                 .AddLogging(configure => { configure.AddConsole(); })
                 .AddSingleton<IDataHandler, DataHandler>()
-                .AddSingleton<IMessageHistoryManager, MessageHistoryManager>()
+                .AddSingleton<IAggregation, AggregationMinutely>()
+                .AddSingleton<IAggregation, AggregationHourly>()
                 .AddTransient<IChatEventViewerApp, ChatEventViewerApp>();
 
             var serviceProvider = serviceCollection.BuildServiceProvider();
 
             // Start the application.
             var chatEventViewerApp = serviceProvider.GetRequiredService<IChatEventViewerApp>();
-            chatEventViewerApp.Run(CancellationToken.None).Wait();
+            await chatEventViewerApp.RunAsync(CancellationToken.None);
         }
     }
 }
