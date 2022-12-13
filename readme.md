@@ -50,3 +50,27 @@ A console application to view chat history at varying levels of time-based aggre
 |12.|                                |             |  Message.cs                    |  Contains a model class to store a message. |
 |13.| PowerDiaryChallenge .UnitTests | Helpers     |  TestDataLoader.cs             |  Contains a helper function to load messages for a test run. |
 |14.|                                | Logics      | MessageHistoryManagerTests.cs  | Contains unit tests for MessageHistoryManager.  |
+
+# Area of improvements
+
+In terms of design:
+
+1. To segregate MessageHistoryManager class into different aggregate classes.
+2. To add async.
+3. To add events and delegate.
+4. To add multi-threads.
+
+In terms of data access components:
+
+1. Adds ORM functionality. (EF, Dapper, or ADO.NET).
+2. Read from files.
+
+In terms of functionalities:
+
+1. Add different views like Yearly, Monthly, Daily, and Minutely or Hourly for a particular day.
+
+In terms of UI clients:
+
+1: Adds a single-page application (SPA) UI using front-end frameworks like React UI or mobile.
+
+
