@@ -4,6 +4,11 @@ A console application to view chat history at varying levels of time-based aggre
 # Design principles
 
 - SOLID
+- Single-responsibility Principle (SRP) - A class should have one and only one reason to change, meaning that a class should have only one job.
+- Open-closed Principle (OCP) - Objects or entities should be open for extension but closed for modification.
+- Liskov Substitution Principle - Objects of a superclass shall be replaceable with objects of its subclasses without changing the behavior of the application.
+- Interface segregation principle - A client should never be forced to implement an interface that it doesn’t use, or clients shouldn’t be forced to depend on methods they do not use.
+- Dependency inversion principle - Entities must depend on abstractions, not on concretions. It states that the high-level module must not depend on the low-level module, but they should depend on abstractions.
 
 # Dependency
 
@@ -53,24 +58,24 @@ A console application to view chat history at varying levels of time-based aggre
 
 # Area of improvements
 
-In terms of design:
+**In terms of design:**
 
 1. To segregate MessageHistoryManager class into different aggregate classes.
 2. To add async.
 3. To add events and delegate.
 4. To add multi-threads.
 
-In terms of data access components:
+**In terms of data access components:**
 
 1. Adds ORM functionality. (EF, Dapper, or ADO.NET).
 2. Read from files.
 
-In terms of functionalities:
+**In terms of functionalities:**
 
 1. Add different views like Yearly, Monthly, Daily, and Minutely or Hourly for a particular day.
 
-In terms of UI clients:
+**In terms of UI clients:**
 
-1: Adds a single-page application (SPA) UI using front-end frameworks like React UI or mobile.
+1. Adds a single-page application (SPA) UI using front-end frameworks like React UI or mobile.
 
 
