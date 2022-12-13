@@ -8,7 +8,7 @@ A console application to view chat history at varying levels of time-based aggre
   - **Open-closed (OCP)** - Objects or entities should be open for extension but closed for modification.
   - **Liskov Substitution (LSP)** - Objects of a superclass shall be replaceable with objects of its subclasses without changing the behavior of the application.
   - **Interface segregation (ISP)** - A client should never be forced to implement an interface that it doesn’t use, or clients shouldn’t be forced to depend on methods they do not use.
- - **Dependency inversion (DIP)** - Entities must depend on abstractions, not on concretions. It states that the high-level module must not depend on the low-level module, but they should depend on abstractions.
+  - **Dependency inversion (DIP)** - Entities must depend on abstractions, not on concretions. It states that the high-level module must not depend on the low-level module, but they should depend on abstractions.
 
 # Dependency
 
