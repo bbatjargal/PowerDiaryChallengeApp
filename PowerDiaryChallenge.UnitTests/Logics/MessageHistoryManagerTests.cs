@@ -16,17 +16,18 @@ namespace PowerDiaryChallenge.UnitTests.Logics
     /// </summary>
     public class MessageHistoryManagerTests
     {
-
-        private readonly IMessageHistoryManager messageHistoryManager;
+        private readonly IAggregation aggregationMinutely;
+        private readonly IAggregation aggregationHourly;
         private readonly DateTime TestStartDateTime = new DateTime(2022, 12, 8, 7, 5, 35);
 
         public MessageHistoryManagerTests()
         {
-            messageHistoryManager = new MessageHistoryManager();
+            aggregationMinutely = new AggregationMinutely();
+            aggregationHourly = new AggregationHourly();
         }
 
         [Fact]
-        public void GivenTheMessages_WhenGetMessagesByMinute_ThenMessagesShouldBeAggregatedByMinute()
+        public async void GivenTheMessages_WhenGetMessagesByMinute_ThenMessagesShouldBeAggregatedByMinute()
         {
             // Arrange
             var initialMessages = TestDataLoader.GetMessage(TestStartDateTime);
@@ -42,7 +43,7 @@ namespace PowerDiaryChallenge.UnitTests.Logics
             };
 
             // Act
-            var actual = messageHistoryManager.GetMessagesByMinute(initialMessages);
+            var actual = await aggregationMinutely.AggregateAsync(initialMessages, CancellationToken.None);
 
             // Assert
             Assert.Equal(expected.Count, actual.Count);
@@ -50,7 +51,7 @@ namespace PowerDiaryChallenge.UnitTests.Logics
         }
 
         [Fact]
-        public void GivenTheMessages_WhenGetMessagesByHour_ThenMessagesShouldBeAggregatedByHour()
+        public async void GivenTheMessages_WhenGetMessagesByHour_ThenMessagesShouldBeAggregatedByHour()
         {
             // Arrange  
             var initialMessages = TestDataLoader.GetMessage(TestStartDateTime);
@@ -60,7 +61,7 @@ namespace PowerDiaryChallenge.UnitTests.Logics
             };
 
             // Act
-            var actual = messageHistoryManager.GetMessagesByHour(initialMessages);
+            var actual = await aggregationHourly.AggregateAsync(initialMessages, CancellationToken.None);
 
             // Assert
             Assert.Equal(expected.Count, actual.Count);
